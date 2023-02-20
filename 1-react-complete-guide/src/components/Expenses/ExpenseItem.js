@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
@@ -12,6 +14,6 @@ const ExpenseItem = (props) => {
       </div>
     </Card>
   );
-}
+};
 
 export default ExpenseItem;
