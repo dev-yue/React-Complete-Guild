@@ -8,11 +8,12 @@ const NewExpense = (props) => {
             id: Math.random.toString(),
         }
         props.onAddExpense(expenseData)
+        props.onCancel()
     }
 
   return (
     <div className="new-expense">
-      <ExpenseForm onSaveExpenseData={onSaveExpenseDataHandler}/>
+      <ExpenseForm onCancel={props.onCancel} onSaveExpenseData={onSaveExpenseDataHandler}/>
     </div>
   );
 };
